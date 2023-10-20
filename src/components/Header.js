@@ -1,6 +1,6 @@
 import React from "react"
 import {Navbar, NavbarBrand} from "reactstrap"
-import headerImage from "../assets/good-faces-agency-rr2ifvkhKR8-unsplash.jpg"
+import headerImage from "../assets/homepage.jpg"
 
 const Header = () => {
   return (
@@ -18,7 +18,7 @@ const Header = () => {
               width: 40
             }}
           />
-          Welcome to uTNDR
+          The Tinder For Content Creators: Utndr
         </NavbarBrand>
       </Navbar>
     </>

@@ -1,5 +1,5 @@
 import React from "react"
-import { useParams } from "react-router-dom"
+import { NavLink, useParams } from "react-router-dom"
 import { Card, CardBody, CardSubtitle, CardTitle, CardText } from "reactstrap"
 
 const UtndrShow = ({ utndrs }) => {
@@ -33,6 +33,9 @@ const UtndrShow = ({ utndrs }) => {
               <CardText>
                 {currentUtndr.content}
               </CardText>
+              <NavLink to={`/utndredit/${currentUtndr.id}`} className="nav-link">
+                Edit Utndr Profile
+              </NavLink>
             </CardBody>
           </Card>
         )}
