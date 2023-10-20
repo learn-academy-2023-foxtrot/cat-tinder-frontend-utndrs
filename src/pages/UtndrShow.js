@@ -1,11 +1,44 @@
 import React from "react"
+import { useParams } from "react-router-dom"
+import { Card, CardBody, CardSubtitle, CardTitle, CardText } from "reactstrap"
 
-const UtndrShow = () => {
-return (
-<>
-<h2>Show component</h2>
-</>
-)
+const UtndrShow = ({ utndrs }) => {
+  const { id } = useParams()
+  let currentUtndr = utndrs?.find((utndr) => utndr.id === +id)
+  console.log(currentUtndr);
+  return (
+    <>
+      <h2>UtndrShow page</h2>
+      <main className="card">
+        {currentUtndr && (
+          <Card
+            style={{
+              width: '18rem'
+            }}
+          >
+            <img
+              alt={`profile picture for ${currentUtndr.name}`}
+              src={currentUtndr.image}
+            />
+            <CardBody>
+              <CardTitle tag="h5">
+                Utndr: {currentUtndr.name}
+              </CardTitle>
+              <CardSubtitle
+                className="mb-2 text-muted"
+                tag="h6"
+              >
+                {currentUtndr.age}
+              </CardSubtitle>
+              <CardText>
+                {currentUtndr.content}
+              </CardText>
+            </CardBody>
+          </Card>
+        )}
+      </main>
+    </>
+  )
 }
 
 export default UtndrShow

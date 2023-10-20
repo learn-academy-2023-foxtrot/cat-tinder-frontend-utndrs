@@ -1,11 +1,11 @@
 import React from "react"
 
 const NotFound = () => {
-return (
-<>
-<h2>Not Found component</h2>
-</>
-)
+  return (
+    <>
+      <div  data-testid="not-found-test" className="not-found-image"></div>
+    </>
+  )
 }
 
 export default NotFound
