@@ -17,7 +17,9 @@ import "./App.css"
 
 const App = () => {
   const [utndrs, setUtndrs] = useState(mockUtndrs)
-  
+  const createUtndr = (newUtndr) => {
+    console.log("new utndr has been created", newUtndr);
+  }
 return (
 <>
 <Header />
@@ -25,7 +27,7 @@ return (
       <Route path="/" element={<Home />} />
       <Route path="/utndrindex" element={<UtndrIndex utndrs={utndrs} />} />
       <Route path="/utndrshow/:id" element={<UtndrShow utndrs={utndrs}/>} />
-      <Route path="/utndrnew" element={<UtndrNew />} />
+      <Route path="/utndrnew" element={<UtndrNew createUtndr={createUtndr} />} />
       <Route path="/utndredit" element={<UtndrEdit />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
