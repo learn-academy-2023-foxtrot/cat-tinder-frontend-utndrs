@@ -5,7 +5,6 @@ import { BrowserRouter } from "react-router-dom"
 
 describe("<Home />", () => {
     it("renders without crashing", () => {
-     
       render(
         <BrowserRouter>
           <Home />
