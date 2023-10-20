@@ -5,14 +5,11 @@ import { BrowserRouter } from "react-router-dom"
 
 describe("<Home />", () => {
     it("renders without crashing", () => {
-     
       render(
         <BrowserRouter>
           <Home />
         </BrowserRouter>
       )
-      screen.debug()
-      screen.logTestingPlaygroundURL()
       const homeInfo = screen.getByRole('heading', {
         name: /home component/i
       })
