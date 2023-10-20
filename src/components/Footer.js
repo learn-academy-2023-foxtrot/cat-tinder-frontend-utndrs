@@ -4,9 +4,11 @@ import { Navbar } from "reactstrap"
 const Footer = () => {
   return (
     <>
-      <Navbar fixed="bottom">
-        <p>&copy; 2023 Aleja and Roniel</p>
-      </Navbar>
+      <div className="footer-container">
+        <Navbar>
+          <p>&copy; 2023 Aleja and Roniel</p>
+        </Navbar>
+      </div>
     </>
   )
 }
