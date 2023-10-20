@@ -20,6 +20,10 @@ const App = () => {
   const createUtndr = (newUtndr) => {
     console.log("new utndr has been created", newUtndr);
   }
+  const updateUtndr = (utndr, id) => {
+    console.log("utdnr:", utndr)
+    console.log("id:", id)
+  }
 return (
 <>
 <Header />
@@ -28,7 +32,7 @@ return (
       <Route path="/utndrindex" element={<UtndrIndex utndrs={utndrs} />} />
       <Route path="/utndrshow/:id" element={<UtndrShow utndrs={utndrs}/>} />
       <Route path="/utndrnew" element={<UtndrNew createUtndr={createUtndr} />} />
-      <Route path="/utndredit" element={<UtndrEdit />} />
+      <Route path="/utndredit/:id" element={<UtndrEdit utndrs={utndrs} updateUtndr={updateUtndr} />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
 <Footer />

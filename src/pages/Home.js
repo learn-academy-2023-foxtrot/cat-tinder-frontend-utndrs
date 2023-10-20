@@ -3,7 +3,9 @@ import React from "react"
 const Home = () => {
 	return (
     <>
-      <h2>Home component</h2>
+      <div className="home-img">
+      <h2 id="homeTitle">Welcome to Utndr</h2>
+      </div>
     </>
 	)
 }
