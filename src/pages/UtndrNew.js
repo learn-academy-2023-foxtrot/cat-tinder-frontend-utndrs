@@ -22,7 +22,7 @@ const UtndrNew = () => {
                   Name
                 </Label>
                 <Input
-                    id="id"
+                    id="name"
                     name="name"
                     placeholder="place your name here"
                     type="text"

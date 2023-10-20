@@ -10,8 +10,6 @@ describe("<NotFound />", () => {
           <NotFound />
         </BrowserRouter>
       )
-      screen.debug()
-      screen.logTestingPlaygroundURL()
       const notFoundInfo = screen.getByTestId("not-found-test")
       expect(notFoundInfo).toBeInTheDocument()
     })

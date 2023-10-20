@@ -10,8 +10,6 @@ describe("<Header />", () => {
           <Header />
         </BrowserRouter>
       )
-      screen.debug()
-      screen.logTestingPlaygroundURL()
       const headerInfo = screen.getByRole('link', {
         name: /logo welcome to utndr/i
       })

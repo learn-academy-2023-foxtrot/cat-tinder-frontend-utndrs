@@ -12,8 +12,6 @@ describe("<UtndrShow />", () => {
               </Routes>
             </MemoryRouter>
         )
-        screen.logTestingPlaygroundURL()
-
         const utndrName = screen.getByRole('heading', {
           name: /utndr: paularts/i
         })

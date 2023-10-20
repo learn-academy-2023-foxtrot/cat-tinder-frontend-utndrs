@@ -10,8 +10,6 @@ describe("<Home />", () => {
           <Home />
         </BrowserRouter>
       )
-      screen.debug()
-      screen.logTestingPlaygroundURL()
       const homeInfo = screen.getByRole('heading', {
         name: /home component/i
       })
