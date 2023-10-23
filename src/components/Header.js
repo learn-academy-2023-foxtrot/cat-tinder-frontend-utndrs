@@ -14,6 +14,7 @@ const Header = () => {
             alt="logo"
             src={headerImage}
             style={{
+             
               height: 40,
               width: 40
             }}

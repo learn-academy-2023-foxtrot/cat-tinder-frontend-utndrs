@@ -5,9 +5,10 @@ import {Card, CardBody, CardTitle, CardSubtitle, Button} from "reactstrap"
 
 const UtndrIndex = ({utndrs}) => {
   return (
-    <main>
+    <main className="utndr-index-cards">
       {utndrs?.map((utndr, index)=>{
         return (
+          <div key={index}className="card-size">
           <Card
             style={{
               width: '18rem'
@@ -33,7 +34,8 @@ const UtndrIndex = ({utndrs}) => {
                 </NavLink>
               </Button>
             </CardBody>
-          </Card>  
+          </Card>
+        </div>  
         )
       })} 
     </main>
