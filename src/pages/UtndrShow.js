@@ -8,8 +8,8 @@ const UtndrShow = ({ utndrs }) => {
   console.log(currentUtndr);
   return (
     <>
-      <h2>UtndrShow page</h2>
-      <main className="card">
+      <h2></h2>
+      <main className="utndr-show-cards">
         {currentUtndr && (
           <Card
             style={{

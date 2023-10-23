@@ -1,3 +1,7 @@
+* {
+  text-align: center;
+}
+
 .not-found-image {
   background-image: url("assets/mulyadi-ZnLprInKM7s-unsplash.jpg");
   background-color: gray;
@@ -9,24 +13,82 @@
 }
 
 .home-img {
+  position: relative; left: 35%;
   background-image: url("assets/homepage.jpg");
-  background-color: gray;
+  /* background-color: gray; */
   height: 600px;
-  width: auto;
+  width: 600px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  
+}
+.whole-page {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+
 }
 
-#homeTitle {
+#home-title {
   margin-top: 0;
-    margin-bottom: 0.5rem;
-    font-weight: 800;
-    line-height: 1.2;
-    color: maroon;
-    text-align: center;
-    border: solid 3px;
+  height: 60PX;
+  margin-bottom: 0.5rem;
+  font-weight: 800;
+  line-height: 1.6;
+  color: black;
+  background-color: maroon;
+  position: relative; left: 0%;
+  border: solid 3px;
 }
 .footer-container {
+  padding: 0%;
+  position:fixed; 
+  left: 620px; 
+  bottom: 0%;
+  color: black;
+}
+.button-position {
+  position: relative; left: 35%;
+  padding: 2%;
   margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  display: grid;
+}
+.utndr-index-cards {
+  padding: 5%;
+  position: absolute; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.card-size{
+
+  height: 10%;
+  width: 20%;
+}
+
+body {
+  
+  position: relative; height: fit-content; width: fit-content;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  background-image: url("https://images.unsplash.com/photo-1645630330301-c93f6b822106?auto=format&fit=crop&q=80&w=1253&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+.utndr-show-cards {
+  padding: 5%;
+  position: relative; left: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.my-2 {
+  height: 40;
+  width: 40;
+  position:absolute; left: 50%; 
 }
